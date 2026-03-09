@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio — RANDRIANAMBININTSOA Aina Kevin</title>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;600;700&family=Syne:wght@400;700;800&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <nav>
+    <div class="nav-logo"><span>~/</span>kevin.dev</div>
+    <ul class="nav-links">
+      <li><a href="#about">à propos</a></li>
+      <li><a href="#formations">formations</a></li>
+      <li><a href="#skills">compétences</a></li>
+      <li><a href="#projects">projets</a></li>
+      <li><a href="#contact">contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="hero">
+    <div class="hero-content">
+      <div class="hero-label">Disponible pour des opportunités</div>
+
+      <h1 class="hero-name">
+        <div class="glitch-wrapper" data-text="RANDRIANAMBININTSOA">RANDRIANAMBININTSOA</div><br/>
+        <span class="accent">Aina Kevin</span>
+      </h1>
+
+      <p class="hero-title">Étudiant en Informatique — 42 Antananarivo · ISPM Madagascar</p>
+
+      <p class="typewriter" id="typewriter"></p>
+
+      <div class="hero-terminal">
+        <div class="terminal-bar">
+          <div class="dot red"></div>
+          <div class="dot yellow"></div>
+          <div class="dot green"></div>
+          <span class="terminal-title">bash — zsh</span>
+        </div>
+        <div class="terminal-body">
+          <div><span class="prompt">~/kevin</span> <span class="cmd">$ whoami</span></div>
+          <div class="output">RANDRIANAMBININTSOA Aina Kevin — Étudiant L2 Informatique</div>
+          <div><span class="prompt">~/kevin</span> <span class="cmd">$ cat formations.txt</span></div>
+          <div class="output">▸ 42 Antananarivo — Tronc Commun (en cours)</div>
+          <div class="output">▸ ISPM Madagascar — Informatique de Gestion, Génie Logiciel &amp; IA (IGGLIA)</div>
+          <div><span class="prompt">~/kevin</span> <span class="cmd">$ echo $STATUS</span></div>
+          <div class="output"><span style="color:var(--green)">Open to opportunities ✓</span></div>
+          <div><span class="prompt">~/kevin</span> <span class="cmd">$ _</span></div>
+        </div>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">▸ Voir mes projets</a>
+        <a href="#contact" class="btn btn-outline">Contact</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="section-header fade-up">
+      <span class="section-num">01.</span>
+      <h2 class="section-title">À Propos</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="about-grid fade-up">
+      <div class="about-text">
+        <p>
+          Bonjour ! Je suis <span>RANDRIANAMBININTSOA Aina Kevin</span>, étudiant passionné
+          en <span>Licence 2 Informatique</span> à Madagascar. Je suis actuellement le cursus
+          exigeant de <span>42 Antananarivo</span> en tronc commun, une école unique basée
+          sur la pédagogie par projets et entre pairs.
+        </p>
+        <p>
+          Parallèlement, je poursuis ma formation à l'<span>ISPM Madagascar</span>
+          avec une filière : <span>Informatique de Gestion</span>,
+          <span>Génie Logiciel</span> et <span>Intelligence Artificielle</span>.
+        </p>
+        <p>
+          Fasciné par la résolution de problèmes complexes et la construction de solutions
+          logicielles robustes, je cherche constamment à améliorer mes compétences
+          techniques et à contribuer à des projets ambitieux.
+        </p>
+      </div>
+      <div class="about-info">
+        <div class="info-row">
+          <span class="key">Nom</span>
+          <span class="val">RANDRIANAMBININTSOA Aina Kevin</span>
+        </div>
+        <div class="info-row">
+          <span class="key">Niveau</span>
+          <span class="val">Licence 2 Informatique</span>
+        </div>
+        <div class="info-row">
+          <span class="key">Localisation</span>
+          <span class="val">Antananarivo, Madagascar</span>
+        </div>
+        <div class="info-row">
+          <span class="key">École 1</span>
+          <span class="val">42 Antananarivo</span>
+        </div>
+        <div class="info-row">
+          <span class="key">École 2</span>
+          <span class="val">ISPM Madagascar</span>
+        </div>
+        <div class="info-row">
+          <span class="key">Email</span>
+          <span class="val"><a href="mailto:ton@email.com">randrinambinintsoainakevin@gmail.com</a></span>
+        </div>
+        <div class="info-row">
+          <span class="key">GitHub</span>
+          <span class="val"><a href="#">github.com/Aina-kevin610</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="formations">
+    <div class="section-header fade-up">
+      <span class="section-num">02.</span>
+      <h2 class="section-title">Formations</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="timeline fade-up">
+
+      <div class="timeline-item">
+        <div class="tl-year">2025 — PRÉSENT</div>
+        <div class="tl-school">42 Antananarivo</div>
+        <div class="tl-degree">Tronc Commun — École de coding par les pairs</div>
+        <div class="tl-desc">
+          Immersion dans une formation intensive sans cours magistraux : apprentissage par projets en C,
+          algorithmique, systèmes UNIX, et collaboration intensive. Passage de la Piscine avec succès.
+        </div>
+        <span class="badge">En cours</span>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-year">2025 — PRÉSENT</div>
+        <div class="tl-school">ISPM Madagascar</div>
+        <div class="tl-degree">Licence 2 — Informatique de Gestion · Génie Logiciel · IA</div>
+        <div class="tl-desc">
+          Formation pluridisciplinaire couvrant la gestion des systèmes d'information,
+          le développement logiciel, les bases de données, et les fondements de l'intelligence artificielle.
+        </div>
+        <span class="badge">En cours</span>
+      </div>
+
+      <div class="timeline-item">
+        <div class="tl-year">2023 — 2024/div>
+        <div class="tl-school">Baccalauréat</div>
+        <div class="tl-degree">Série C — Lycée Catholique Masina Maria Mpanampy Soanierana</div>
+        <div class="tl-desc">
+          Obtention du baccalauréat avec mention. Premier contact avec l'informatique et les sciences.
+        </div>
+        <span class="badge">Obtenu</span>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="skills">
+    <div class="section-header fade-up">
+      <span class="section-num">03.</span>
+      <h2 class="section-title">Compétences</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="skills-grid fade-up">
+
+      <div class="skill-card">
+        <div class="skill-card-title">// Langages</div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>C</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="75"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Python</span><span class="skill-pct">65%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>JavaScript</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="55"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>HTML / CSS</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">// Systèmes & Outils</div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Linux / UNIX</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="70"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Git / GitHub</span><span class="skill-pct">75%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="65"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Shell Bash</span><span class="skill-pct">70%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="60"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>SQL / BDD</span><span class="skill-pct">55%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="55"></div></div>
+        </div>
+      </div>
+
+      <div class="skill-card">
+        <div class="skill-card-title">// Soft Skills</div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Travail en équipe</span><span class="skill-pct">85%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="85"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Résolution de problèmes</span><span class="skill-pct">80%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="80"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Autonomie</span><span class="skill-pct">78%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="78"></div></div>
+        </div>
+        <div class="skill-item">
+          <div class="skill-meta"><span>Curiosité technique</span><span class="skill-pct">90%</span></div>
+          <div class="skill-bar"><div class="skill-fill" data-w="90"></div></div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="section-header fade-up">
+      <span class="section-num">04.</span>
+      <h2 class="section-title">Projets</h2>
+      <div class="section-line"></div>
+    </div>
+    <div class="projects-grid fade-up">
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">⚙️</div>
+          <div class="project-links">
+            <a href="https://github.com/Aina-Kevin610/forty_two/tree/main/milestone1/push_swap" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-name">Projet 42 — push_swap</div>
+        <div class="project-desc">
+          Push Swap est un projet de l'école 42 consistant à trier une pile de nombres entiers en utilisant deux piles (stack_a et stack_b) et un ensemble limité d'opérations (push, swap, rotate, reverse rotate). L'objectif est d'écrire un programme en C qui produit la suite d'instructions la plus courte possible pour trier les données — c'est un exercice d'algorithmique et d'optimisation qui introduit aux concepts de complexité et de tri avancé.
+        </div>
+        <div class="project-tags">
+          <span class="tag">C</span>
+          <span class="tag">Algorithmique</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">⚙️</div>
+          <div class="project-links">
+            <a href="https://github.com/Aina-Kevin610/forty_two/tree/main/milestone1/ft_printf" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-name">Projet 42 — ft_printf()</div>
+        <div class="project-desc">
+          ft_printf est un projet 42 consistant à recoder la célèbre fonction printf() du C from scratch. Il faut gérer les conversions de formats (%d, %s, %x, %p…) via des fonctions variadic (va_list, va_arg). L'objectif est de comprendre le parsing d'arguments variables, la gestion des types et l'écriture bas niveau sur la sortie standard — une fonction qui sera ensuite réutilisée dans tous les projets suivants.
+        </div>
+        <div class="project-tags">
+          <span class="tag">C</span>
+          <span class="tag">Algorithme</span>
+        </div>
+      </div>
+
+	  <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">⚙️</div>
+          <div class="project-links">
+            <a href="https://github.com/Aina-Kevin610/forty_two/tree/main/milestone0/libft" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-name">Projet 42 — libft</div>
+        <div class="project-desc">
+          Libft est le tout premier projet de l'école 42 : recoder from scratch une bibliothèque de fonctions standard du C (strlen, memcpy, atoi, split…) sans utiliser la libc. L'objectif est de comprendre en profondeur le fonctionnement des fonctions C de base, de maîtriser la gestion manuelle de la mémoire avec malloc/free, et de produire une bibliothèque personnelle réutilisable dans tous les projets suivants du cursus.
+        </div>
+        <div class="project-tags">
+          <span class="tag">C</span>
+          <span class="tag">Algorithme</span>
+        </div>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <div class="project-icon">⚙️</div>
+          <div class="project-links">
+            <a href="https://github.com/Aina-Kevin610/forty_two/tree/main/milestone1/get_next_line" class="project-link">GitHub ↗</a>
+          </div>
+        </div>
+        <div class="project-name">Project 42 — get_next_line()</div>
+        <div class="project-desc">
+          get_next_line est un projet 42 qui consiste à coder une fonction capable de lire une ligne à la fois depuis un file descriptor (fichier, entrée standard…), quel que soit la taille du buffer. Il introduit aux concepts de lecture partielle, de gestion d'un buffer statique entre deux appels, et de manipulation fine de la mémoire en C — un exercice fondamental pour comprendre comment fonctionne la lecture de fichiers au niveau système.
+        </div>
+        <div class="project-tags">
+          <span class="tag">C</span>
+          <span class="tag">UNIX</span>
+          <span class="tag">Algorithme</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contact">
+    <div class="contact-inner">
+      <div class="section-header fade-up" style="justify-content:center;text-align:center;flex-direction:column;gap:8px;">
+        <span class="section-num">05.</span>
+        <h2 class="section-title">Contact</h2>
+      </div>
+      <p class="contact-subtitle fade-up">
+        Tu as un projet, une opportunité de stage ou simplement envie d'échanger ?
+        N'hésite pas à me contacter. Je suis ouvert aux collaborations et aux nouvelles aventures tech.
+      </p>
+      <div class="contact-links fade-up">
+        <a href="mailto:ton@email.com" class="contact-link">
+          <span>✉</span> randrinambinintsoaainakevin@gmail.com
+        </a>
+        <a href="#" class="contact-link">
+          <span>⌥</span> RANDRIANAMBININTSOA Aina Kevin
+        </a>
+        <a href="#" class="contact-link">
+          <span>◈</span> Aina-kevin610
+        </a>
+      </div>
+      <a href="mailto:randrianambinintsoaainakevin@gmail.com" class="btn btn-primary fade-up">
+        ▸ Envoyer un message
+      </a>
+    </div>
+  </section>
+
+  <footer>
+    <span>© 2025 — RANDRIANAMBININTSOA Aina Kevin</span>
+    <span>Conçu &amp; Développé avec ❤ · Antananarivo, Madagascar</span>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
