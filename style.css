@@ -405,6 +405,86 @@ section {
   transition: width 1.2s cubic-bezier(0.4,0,0.2,1);
 }
 
+/* ── PROJECTS: category selector ── */
+.project-categories {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.category-card {
+  background: var(--dark-2);
+  border: 1px solid var(--dark-4);
+  border-radius: 8px;
+  padding: 32px 28px;
+  cursor: none;
+  transition: all 0.3s;
+  position: relative;
+  overflow: hidden;
+}
+.category-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--green), var(--accent));
+  transform: scaleX(0);
+  transition: transform 0.3s;
+}
+.category-card:hover::before { transform: scaleX(1); }
+.category-card:hover {
+  border-color: rgba(0,255,136,0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px rgba(0,0,0,0.4);
+}
+
+.category-icon {
+  font-size: 1.4rem;
+  color: var(--green);
+  margin-bottom: 16px;
+}
+.category-name {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #fff;
+  margin-bottom: 8px;
+}
+.category-count {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+  letter-spacing: 0.05em;
+}
+.category-arrow {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  font-size: 1rem;
+  color: var(--text-dim);
+  transition: transform 0.3s, color 0.3s;
+}
+.category-card:hover .category-arrow {
+  transform: translateX(6px);
+  color: var(--green);
+}
+
+/* ── PROJECTS: group panels ── */
+.project-group {
+  display: none;
+}
+.project-group.active {
+  display: block;
+  animation: fadeInGroup 0.4s ease;
+}
+@keyframes fadeInGroup {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.back-btn {
+  margin-bottom: 32px;
+}
+
 /* ── PROJECTS ── */
 #projects .projects-grid {
   display: grid;

@@ -59,3 +59,22 @@ const observer = new IntersectionObserver(entries => {
 }, { threshold: 0.1 });
 
 document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+const projectCategories = document.getElementById('projectCategories');
+const projectGroups = document.querySelectorAll('.project-group');
+
+document.querySelectorAll('.category-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const target = document.getElementById(card.dataset.target);
+    projectCategories.style.display = 'none';
+    projectGroups.forEach(g => g.classList.remove('active'));
+    target.classList.add('active');
+  });
+});
+
+document.querySelectorAll('.back-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    projectGroups.forEach(g => g.classList.remove('active'));
+    projectCategories.style.display = 'grid';
+  });
+});

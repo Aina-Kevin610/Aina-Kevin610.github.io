@@ -241,77 +241,151 @@
       <h2 class="section-title">Projets</h2>
       <div class="section-line"></div>
     </div>
-    <div class="projects-grid fade-up">
+    <div class="project-categories fade-up" id="projectCategories">
 
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-icon"></div>
-          <div class="project-links">
-            <a href="https://github.com/Aina-Kevin610/push_swap" class="project-link">GitHub ↗</a>
-          </div>
-        </div>
-        <div class="project-name">Projet 42 — push_swap</div>
-        <div class="project-desc">
-          Push Swap est un projet de l'école 42 consistant à trier une pile de nombres entiers en utilisant deux piles (stack_a et stack_b) et un ensemble limité d'opérations (push, swap, rotate, reverse rotate). L'objectif est d'écrire un programme en C qui produit la suite d'instructions la plus courte possible pour trier les données — c'est un exercice d'algorithmique et d'optimisation qui introduit aux concepts de complexité et de tri avancé.
-        </div>
-        <div class="project-tags">
-          <span class="tag">C</span>
-          <span class="tag">Algorithmique</span>
-        </div>
+      <div class="category-card" data-target="cat-42">
+        <div class="category-icon">▹</div>
+        <div class="category-name">Projets 42</div>
+        <div class="category-count">4 projets</div>
+        <div class="category-arrow">→</div>
       </div>
 
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-icon"></div>
-          <div class="project-links">
-            <a href="https://github.com/Aina-Kevin610/ft_printf" class="project-link">GitHub ↗</a>
-          </div>
-        </div>
-        <div class="project-name">Projet 42 — ft_printf()</div>
-        <div class="project-desc">
-          ft_printf est un projet 42 consistant à recoder la célèbre fonction printf() du C from scratch. Il faut gérer les conversions de formats (%d, %s, %x, %p…) via des fonctions variadic (va_list, va_arg). L'objectif est de comprendre le parsing d'arguments variables, la gestion des types et l'écriture bas niveau sur la sortie standard — une fonction qui sera ensuite réutilisée dans tous les projets suivants.
-        </div>
-        <div class="project-tags">
-          <span class="tag">C</span>
-          <span class="tag">Algorithme</span>
-        </div>
+      <div class="category-card" data-target="cat-ispm">
+        <div class="category-icon">▹</div>
+        <div class="category-name">Projets ISPM</div>
+        <div class="category-count">1 projet</div>
+        <div class="category-arrow">→</div>
       </div>
 
-	  <div class="project-card">
-        <div class="project-header">
-          <div class="project-icon"></div>
-          <div class="project-links">
-            <a href="https://github.com/Aina-Kevin610/libft_42" class="project-link">GitHub ↗</a>
-          </div>
-        </div>
-        <div class="project-name">Projet 42 — libft</div>
-        <div class="project-desc">
-          Libft est le tout premier projet de l'école 42 : recoder from scratch une bibliothèque de fonctions standard du C (strlen, memcpy, atoi, split…) sans utiliser la libc. L'objectif est de comprendre en profondeur le fonctionnement des fonctions C de base, de maîtriser la gestion manuelle de la mémoire avec malloc/free, et de produire une bibliothèque personnelle réutilisable dans tous les projets suivants du cursus.
-        </div>
-        <div class="project-tags">
-          <span class="tag">C</span>
-          <span class="tag">Algorithme</span>
-        </div>
+      <div class="category-card" data-target="cat-perso">
+        <div class="category-icon">▹</div>
+        <div class="category-name">Projets Personnels</div>
+        <div class="category-count">1 projet</div>
+        <div class="category-arrow">→</div>
       </div>
 
-      <div class="project-card">
-        <div class="project-header">
-          <div class="project-icon"></div>
-          <div class="project-links">
-            <a href="https://github.com/Aina-Kevin610/GNL-get_next_line-" class="project-link">GitHub ↗</a>
+    </div>
+
+    <div class="project-group" id="cat-42">
+      <button class="btn btn-outline back-btn">← Retour aux catégories</button>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="https://github.com/Aina-Kevin610/push_swap" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-name">Projet 42 — push_swap</div>
+          <div class="project-desc">
+            Push Swap est un projet de l'école 42 consistant à trier une pile de nombres entiers en utilisant deux piles (stack_a et stack_b) et un ensemble limité d'opérations (push, swap, rotate, reverse rotate). L'objectif est d'écrire un programme en C qui produit la suite d'instructions la plus courte possible pour trier les données — c'est un exercice d'algorithmique et d'optimisation qui introduit aux concepts de complexité et de tri avancé.
+          </div>
+          <div class="project-tags">
+            <span class="tag">C</span>
+            <span class="tag">Algorithmique</span>
           </div>
         </div>
-        <div class="project-name">Project 42 — get_next_line()</div>
-        <div class="project-desc">
-          get_next_line est un projet 42 qui consiste à coder une fonction capable de lire une ligne à la fois depuis un file descriptor (fichier, entrée standard…), quel que soit la taille du buffer. Il introduit aux concepts de lecture partielle, de gestion d'un buffer statique entre deux appels, et de manipulation fine de la mémoire en C — un exercice fondamental pour comprendre comment fonctionne la lecture de fichiers au niveau système.
-        </div>
-        <div class="project-tags">
-          <span class="tag">C</span>
-          <span class="tag">UNIX</span>
-          <span class="tag">Algorithme</span>
-        </div>
-      </div>
 
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="https://github.com/Aina-Kevin610/ft_printf" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-name">Projet 42 — ft_printf()</div>
+          <div class="project-desc">
+            ft_printf est un projet 42 consistant à recoder la célèbre fonction printf() du C from scratch. Il faut gérer les conversions de formats (%d, %s, %x, %p…) via des fonctions variadic (va_list, va_arg). L'objectif est de comprendre le parsing d'arguments variables, la gestion des types et l'écriture bas niveau sur la sortie standard — une fonction qui sera ensuite réutilisée dans tous les projets suivants.
+          </div>
+          <div class="project-tags">
+            <span class="tag">C</span>
+            <span class="tag">Algorithme</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="https://github.com/Aina-Kevin610/libft_42" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-name">Projet 42 — libft</div>
+          <div class="project-desc">
+            Libft est le tout premier projet de l'école 42 : recoder from scratch une bibliothèque de fonctions standard du C (strlen, memcpy, atoi, split…) sans utiliser la libc. L'objectif est de comprendre en profondeur le fonctionnement des fonctions C de base, de maîtriser la gestion manuelle de la mémoire avec malloc/free, et de produire une bibliothèque personnelle réutilisable dans tous les projets suivants du cursus.
+          </div>
+          <div class="project-tags">
+            <span class="tag">C</span>
+            <span class="tag">Algorithme</span>
+          </div>
+        </div>
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="https://github.com/Aina-Kevin610/GNL-get_next_line-" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-name">Project 42 — get_next_line()</div>
+          <div class="project-desc">
+            get_next_line est un projet 42 qui consiste à coder une fonction capable de lire une ligne à la fois depuis un file descriptor (fichier, entrée standard…), quel que soit la taille du buffer. Il introduit aux concepts de lecture partielle, de gestion d'un buffer statique entre deux appels, et de manipulation fine de la mémoire en C — un exercice fondamental pour comprendre comment fonctionne la lecture de fichiers au niveau système.
+          </div>
+          <div class="project-tags">
+            <span class="tag">C</span>
+            <span class="tag">UNIX</span>
+            <span class="tag">Algorithme</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="project-group" id="cat-ispm">
+      <button class="btn btn-outline back-btn">← Retour aux catégories</button>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-name">Projet ISPM — À compléter</div>
+          <div class="project-desc">
+            Remplace ce texte par la description de ton projet réalisé à l'ISPM (nom, objectif, technologies utilisées, ton rôle dans le projet, etc.).
+          </div>
+          <div class="project-tags">
+            <span class="tag">À définir</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="project-group" id="cat-perso">
+      <button class="btn btn-outline back-btn">← Retour aux catégories</button>
+      <div class="projects-grid">
+
+        <div class="project-card">
+          <div class="project-header">
+            <div class="project-icon"></div>
+            <div class="project-links">
+              <a href="#" class="project-link">GitHub ↗</a>
+            </div>
+          </div>
+          <div class="project-name">Projet Personnel — À compléter</div>
+          <div class="project-desc">
+            Remplace ce texte par la description d'un de tes projets persos (ex : a-maze-ing, ton setup Neovim, un site, etc.).
+          </div>
+          <div class="project-tags">
+            <span class="tag">À définir</span>
+          </div>
+        </div>
+
+      </div>
     </div>
   </section>
 
